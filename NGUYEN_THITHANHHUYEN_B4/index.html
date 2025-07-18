@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TH1-B4</title>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main">
+<!--*******************BASIC INFO*******************-->
+        <div class="basic-info">
+            <h2 class="title">Basic Info</h2>
+            <div class="container">
+                <div class="box">
+                    <label class="left">Employee ID</label>
+                    <div class="right">9</div>
+                </div>
+                <div class="box">
+                    <label class="left">Last Name</label>
+                    <div class="right">Dodsworth</div>
+                </div>
+                <div class="box">
+                    <label for="f-name" class="left">First Name</label>
+                    <input type="text" class="right" id="f-name" value="Anne">
+                </div>    
+                <div class="box">
+                    <div class="left">Gender</div>
+                    <div class="right">
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label><br>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label><br>
+                        <input type="radio" id="XXX" name="gender" value="XXX">
+                        <label for="XXX">XXX</label><br>
+                        <input type="radio" id="ZZZ" name="gender" value="ZZZ">
+                        <label for="ZZZ">ZZZ</label>
+                    </div>
+                </div>
+                <div class="box">
+                    <label for="title" class="left">Title</label>
+                    <input type="text"  class="right" id="title" value="Sales Representative">
+                </div>
+                <div class="box">
+                    <label for="suffix" class="left">Suffix</label>
+                    <input type="text" class="right" id="suffix" value="Ms.">
+                </div>
+                <div class="box">
+                    <label for="bdate" class="left">BirthDate</label>
+                    <input type="date" class="right" id="bdate" value="1969-07-02">
+                </div>
+                <div class="box">
+                    <label for="hdate" class="left">HireDate</label>
+                    <input type="date" class="right" id="hdate" value="1994-11-15">
+                </div>
+                <div class="box">
+                    <label for="SSN" class="left">SSN # (if applicable)</label>
+                    <input type="text" class="right" id="SSN">
+                </div>  
+                <div class="box">
+                    <label for="reports" class="left">Reports To</label>
+                    <section class="right">
+                        <select id="reports">
+                            <option value="1">Buchanan</option>
+                            <option value="2">Alex</option>
+                        </select>
+                    </section>
+                </div>  
+            </div>
+        </div>
+<!--**************CONTACT INFO******************-->
+        <div class="contact-info">
+            <h2 class="title">Contact Info</h2>
+            <div class="box">
+                <label for="email" class="left">Email</label>
+                <input type="email" class="right" id="email" placeholder="name@example.com">
+            </div>
+            <div class="box">
+                <label for="address" class="left">Address</label>
+                <input type="text" class="right" id="address" value="7 Houndstooth Rd.">
+            </div>
+            <div class="box">
+                <label for="city" class="left">City</label>
+                <input type="text" class="right" id="city" value="London">
+            </div>
+            <div class="box">
+                <label for="reigon" class="left">Region</label>
+                <input type="text" class="right" id="reigon">
+            </div>
+            <div class="box">
+                <label for="postal-code" class="left">Postal Code</label>
+                <input type="text" class="right" id="postal-code" value="WG2 7LT">
+            </div>
+            <div class="box">
+                <label for="country" class="left">Country</label>
+                <section class="right">
+                    <select id="country">
+                        <option value="1">Russian Federation</option>
+                        <option value="2">USA</option>
+                    </select>
+                </section>
+            </div>
+            <div class="box">
+                <label for="h-phone" class="left">US Home Phone</label>
+                <input type="tel" class="right" id="h-phone"value="(234)234-242">
+            </div>
+            <div class="box">
+                <label for="photo" class="left">Photo</label>
+                <input type="text" class="left" id="photo">
+            </div>
+        </div>
+<!--*************************OPTIONAL INFO*************************-->
+        <div class="optional-info">
+            <h2 class="title">Optional Info</h2>
+            <div class="box">
+                <label for="note" class="left">Notes</label>
+                <textarea class="right" cols="50" rows="10" id="note"></textarea>
+            </div>
+            <div class="box">
+                <label class="left">Preferred Shift</label>
+                <div class="prefered">
+                    <label class="prefered_check" for="Regular">
+                    <input type="Checkbox">Regular</label>
+                    <label class="prefered_check"  for="Regular">
+                    <input type="Checkbox">Gravy Yard</label>
+                </div>
+            </div>
+            <div class="box">
+                <label for="active" class="left">Active?</label>
+                <input type="checkbox" id="active">
+            </div>
+            <div class="box">
+                <!-- <label for="human" class="">Are you human?</label> -->
+                <label for="human" class="left">Click to change</label>
+                <br>
+                <input type="text" class="right" id="human">
+            </div>
+        </div>
+        <div id="end">
+            <h2 class="line"></h2>
+<!--****************SUBMIT********************-->
+            <footer>
+                <div class="arrow">
+                    <i class="fa-solid fa-square-caret-left"></i>
+                    <i class="fa-solid fa-square-caret-right"></i>
+                </div>
+                <div class="button">
+                    <i class="fa-solid fa-floppy-disk"></i>
+                    <button class="cancel">Submit</button>
+                    <i class="fa-solid fa-xmark"></i>
+                    <button class="save">Save</button>
+                </div>
+            </footer>
+            <b class="required">* required</b>
+    </div>
+</div>
+</body>
+</html>
