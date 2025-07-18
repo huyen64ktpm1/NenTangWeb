@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Thêm Sinh Viên</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #e3f2fd, #ffffff);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      background-color: white;
+      padding: 40px;
+      max-width: 600px;
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #1565c0;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="date"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+
+    input[type="radio"] {
+      margin-right: 8px;
+    }
+
+    .gender-group {
+      margin-bottom: 20px;
+    }
+
+    button {
+      background-color: #1565c0;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    button:hover {
+      background-color: #0d47a1;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>📋 Thêm Thông Tin Sinh Viên</h2>
+    <form>
+      <label for="maSV">Mã sinh viên:</label>
+      <input type="text" id="maSV" name="maSV" required>
+
+      <label for="hoTen">Họ và tên:</label>
+      <input type="text" id="hoTen" name="hoTen" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="ngaySinh">Ngày sinh:</label>
+      <input type="date" id="ngaySinh" name="ngaySinh">
+
+      <label>Giới tính:</label>
+      <div class="gender-group">
+        <input type="radio" id="nam" name="gioiTinh" value="Nam">
+        <label for="nam" style="display:inline;">Nam</label>
+
+        <input type="radio" id="nu" name="gioiTinh" value="Nữ">
+        <label for="nu" style="display:inline;">Nữ</label>
+      </div>
+
+      <label for="ghiChu">Ghi chú:</label>
+      <textarea id="ghiChu" name="ghiChu" rows="4" placeholder="Nhập ghi chú (nếu có)..."></textarea>
+
+      <button type="submit">Thêm sinh viên</button>
+    </form>
+  </div>
+
+</body>
+</html>

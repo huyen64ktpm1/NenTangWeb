@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+}
+body{
+    display: flex;
+    justify-content:center ;
+    margin: 0;
+    padding: 0;
+
+}   
+.main{
+    border: 10px solid #d3d1d1;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 50%;
+}
+.box{
+    display: flex;
+    margin: 8px 20px;
+}
+.left{
+    min-width: 150px;
+}
+.right{
+    flex:1
+}
+h2.title{
+    border-bottom: 3px solid grey;
+    margin: 10px;
+}
+.prefered{
+    display: flex;
+    flex-direction: column;
+}
+.prefered_check{
+    margin-top: 5px;
+}
+.prefered_check input{
+    margin-right: 5px;
+}
+h2.line{
+    border-top: 3px solid grey ;
+}
+footer {
+    display: flex;
+    border-top: gray 3px solid;
+
+}
+
+footer .button {
+    margin-left: auto;
+
+}
+
+footer .button button {
+    background-color: black;
+    color: white;
+}
+
+.arrow, .button {
+    margin-top: 5px;
+    padding: 5px;
+}
+.required{
+    margin: auto;
+}
