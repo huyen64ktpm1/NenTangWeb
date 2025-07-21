@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Giao diện CRUD Sinh Viên</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <h1>Quản Lý Sinh Viên</h1>
+  </header>
+
+  <!-- Nội dung chính -->
+  <div class="container">
+    <div class="form-section">
+      <h2>Thêm Sinh Viên</h2>
+      <form>
+        <div class="input-group">
+          <label for="maSV">Mã Sinh Viên:</label>
+          <input type="text" id="maSV" placeholder="Nhập mã sinh viên">
+        </div>
+        <div class="input-group">
+          <label for="tenSV">Tên Sinh Viên:</label>
+          <input type="text" id="tenSV" placeholder="Nhập tên sinh viên">
+        </div>
+        <div class="input-group">
+          <label for="emailSV">Email:</label>
+          <input type="email" id="emailSV" placeholder="Nhập email">
+        </div>
+        <button type="submit">Thêm mới</button>
+      </form>
+    </div>
+
+    <div class="table-section">
+      <h2>Danh Sách Sinh Viên</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Mã SV</th>
+            <th>Tên SV</th>
+            <th>Email</th>
+            <th>Hành Động</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+              <td>2251172367</td>
+            <td>Nguyễn Thị Thanh Huyền</td>
+            <td>huyen@example.com</td>
+            <td>
+              <button class="action-btn edit-btn">Sửa</button>
+              <button class="action-btn delete-btn">Xóa</button>
+            </td>
+          </tr>
+          <tr>
+            <td>2251172377</td>
+            <td>Trần Thị Hoàn</td>
+            <td>thib@example.com</td>
+            <td>
+              <button class="action-btn edit-btn">Sửa</button>
+              <button class="action-btn delete-btn">Xóa</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</body>
+</html>
+

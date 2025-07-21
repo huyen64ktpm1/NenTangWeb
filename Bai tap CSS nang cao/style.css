@@ -1,0 +1,164 @@
+/* Reset các thuộc tính cơ bản */
+body, h1, h2, form, table {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  box-sizing: border-box;
+}
+
+/* Màu nền tổng thể và căn chỉnh */
+body {
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: #3f69bd; /* Màu xanh lá */
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+/* Container chính */
+.container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+/* Phần form */
+.form-section {
+  flex: 1 1 100%;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-section h2 {
+  margin-bottom: 30px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+}
+
+button {
+  background-color: #47a257; /* Màu xanh lá */
+  color: white;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width:  100%;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #325f34; /* Xanh lá đậm */
+}
+
+/* Phần bảng */
+.table-section {
+  flex: 1 1 100%;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.table-section h2 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #237776; /* Màu xanh lá */
+  color: white;
+}
+
+/* Nút sửa và xóa nhỏ gọn */
+.action-btn {
+  padding: 5px 15px;
+  margin: 0 1px;
+  font-size: 0.8rem; /* Giảm kích thước font */
+  border: none;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.edit-btn {
+  background-color: #2ca65d; /* Màu xanh lá sáng */
+}
+
+.delete-btn {
+  background-color: #dc3545; /* Màu đỏ */
+}
+
+.edit-btn:hover {
+  background-color: #218838;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+}
+
+/* Hiệu ứng hover cho bảng */
+tr:hover {
+  background-color: #ebf0eb; /* Màu sáng nhẹ */
+}
+
+/* Responsive cho màn hình nhỏ */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-section, .table-section {
+    flex: 1 1 100%;
+    margin-bottom: 20px;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+  }
+}
